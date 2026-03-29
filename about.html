@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - InsurCo</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <i class="fas fa-shield-halved"></i> Insur<span>Co</span>
+            </a>
+
+            <div class="nav-links">
+                <!-- Home Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Home <i class="fas fa-chevron-down"
+                            style="font-size: 12px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home V1</a>
+                        <a href="home-v2.html" class="dropdown-item">Home V2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <!-- Dashboards Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Dashboards <i class="fas fa-chevron-down"
+                            style="font-size: 12px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="dashboard-user.html" class="dropdown-item">User Dashboard</a>
+                        <a href="dashboard-admin.html" class="dropdown-item">Admin Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <!-- Desktop Buttons -->
+                <div class="nav-buttons" style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Log In</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 16px;">Get Started</a>
+                </div>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+
+                <!-- Globe Toggle -->
+                <button class="language-toggle" aria-label="Switch Language">
+                    <i class="fas fa-globe"></i>
+                </button>
+
+                <!-- Hamburger Menu Toggle (RTL-safe) -->
+                <button class="menu-toggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Mobile Menu Button (Legacy) -->
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div style="padding: 8px 0; border-bottom: 1px solid #eee; margin-bottom: 8px;">
+            <span
+                style="display: block; padding: 8px 0 8px 0; font-weight: 600; color: var(--text-light); font-size: 0.875rem;">Home
+                Layouts</span>
+            <a href="index.html" class="nav-link" style="padding-left: 16px;">Home V1</a>
+            <a href="home-v2.html" class="nav-link" style="padding-left: 16px;">Home V2</a>
+        </div>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div style="padding: 8px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin: 8px 0;">
+            <span
+                style="display: block; padding: 8px 0; font-weight: 600; color: var(--text-light); font-size: 0.875rem;">Dashboards</span>
+            <a href="dashboard-user.html" class="nav-link" style="padding-left: 16px;">User Dashboard</a>
+            <a href="dashboard-admin.html" class="nav-link" style="padding-left: 16px;">Admin Dashboard</a>
+        </div>
+        <hr style="border: 0; border-top: 1px solid #eee;">
+        <a href="login.html" class="btn btn-outline" style="width: 100%;">Log In</a>
+        <a href="signup.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+    </div>
+
+    <!-- About Hero -->
+    <section class="section bg-primary">
+        <div class="container">
+            <div class="section-split" style="align-items: center;">
+                <div class="reveal-up">
+                    <p class="section-kicker" style="color: var(--secondary-color);">About InsurCo</p>
+                    <h1 class="h1" style="color: white; margin-bottom: 12px;">Built to protect every chapter of your
+                        story.</h1>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 32rem;">
+                        From individuals and families to global enterprises, InsurCo brings together technology, capital
+                        and
+                        expertise to make protection feel simple, predictable, and human.
+                    </p>
+                    <div class="pill-row" style="margin-top: var(--spacing-lg);">
+                        <span class="pill" style="background-color: rgba(15,23,42,0.9); color: rgba(249,250,251,0.9);">
+                            Risk-first thinking
+                        </span>
+                        <span class="pill" style="background-color: rgba(15,23,42,0.9); color: rgba(249,250,251,0.9);">
+                            Technology with empathy
+                        </span>
+                    </div>
+                </div>
+                <div class="reveal-up reveal-delay-1">
+                    <div class="card" style="background: linear-gradient(135deg, #0b1726, #0a2342); color: white;">
+                        <p class="section-kicker" style="color: rgba(248,250,252,0.8);">At a glance</p>
+                        <div class="grid-cols-3 metric-grid" style="margin-top: var(--spacing-md);">
+                            <div class="metric-card" style="background: transparent; box-shadow: none; border: 0;">
+                                <p class="metric-label" style="color: rgba(148,163,184,0.9);">Founded</p>
+                                <p class="metric-value" style="color: white;">1995</p>
+                                <p class="metric-helper" style="color: rgba(148,163,184,0.9);">Decades of risk
+                                    expertise.</p>
+                            </div>
+                            <div class="metric-card" style="background: transparent; box-shadow: none; border: 0;">
+                                <p class="metric-label" style="color: rgba(148,163,184,0.9);">Countries</p>
+                                <p class="metric-value" style="color: white;">50+</p>
+                                <p class="metric-helper" style="color: rgba(148,163,184,0.9);">Globally diversified
+                                    footprint.</p>
+                            </div>
+                            <div class="metric-card" style="background: transparent; box-shadow: none; border: 0;">
+                                <p class="metric-label" style="color: rgba(148,163,184,0.9);">Customers</p>
+                                <p class="metric-value" style="color: white;">5M+</p>
+                                <p class="metric-helper" style="color: rgba(148,163,184,0.9);">Lives and businesses
+                                    protected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-split">
+                <div class="reveal-up">
+                    <div class="section-header">
+                        <p class="section-kicker">Our story</p>
+                        <h2 class="h2">From regional insurer to global risk partner.</h2>
+                    </div>
+                    <p class="text-muted" style="margin-bottom: 16px;">
+                        Founded in 1995, InsurCo began as a focused regional insurer serving local families and small
+                        businesses. As our customers’ needs evolved, so did our ambition.
+                    </p>
+                    <p class="text-muted" style="margin-bottom: 16px;">
+                        Today, we operate across more than 50 countries, blending disciplined underwriting with
+                        real-time
+                        data to deliver responsive coverage for individuals, employers, and institutions.
+                    </p>
+                    <ul class="list-check">
+                        <li><i class="fas fa-check"></i><span>Dedicated centers of excellence across health, life,
+                                property
+                                and casualty.</span></li>
+                        <li><i class="fas fa-check"></i><span>Technology-first claims and policy management built on a
+                                secure
+                                cloud platform.</span></li>
+                        <li><i class="fas fa-check"></i><span>Local teams in key regions to stay close to customer
+                                realities
+                                and regulation.</span></li>
+                    </ul>
+                </div>
+                <div class="reveal-up reveal-delay-1">
+                    <div class="image-wrapper"
+                        style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl);">
+                        <img src="assets/images/about-team.png" alt="InsurCo global team collaborating">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">What we stand for</p>
+                <h2 class="h2">A mission anchored in trust and performance.</h2>
+                <p class="section-description">
+                    Every decision we make balances financial strength with empathy for the people behind every policy
+                    ID.
+                </p>
+            </div>
+
+            <div class="grid-cols-3">
+                <div class="card reveal-up">
+                    <i class="fas fa-bullseye fa-2x text-secondary" style="margin-bottom: 16px;"></i>
+                    <h3 class="h3" style="font-size: 1.25rem; margin-bottom: 12px;">Our mission</h3>
+                    <p class="text-muted">
+                        To provide accessible, predictable protection for every stage of life—delivered with clarity,
+                        speed
+                        and respect.
+                    </p>
+                </div>
+                <div class="card reveal-up reveal-delay-1">
+                    <i class="fas fa-eye fa-2x text-secondary" style="margin-bottom: 16px;"></i>
+                    <h3 class="h3" style="font-size: 1.25rem; margin-bottom: 12px;">Our vision</h3>
+                    <p class="text-muted">
+                        To be the most trusted global insurance partner, where digital experiences feel effortless and
+                        support
+                        feels personal.
+                    </p>
+                </div>
+                <div class="card reveal-up reveal-delay-2">
+                    <i class="fas fa-hand-holding-heart fa-2x text-secondary" style="margin-bottom: 16px;"></i>
+                    <h3 class="h3" style="font-size: 1.25rem; margin-bottom: 12px;">Our values</h3>
+                    <p class="text-muted">
+                        Integrity, transparency, customer-first thinking and constant innovation guide our teams every
+                        day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Timeline -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Milestones</p>
+                <h2 class="h2">Three decades of continuous evolution.</h2>
+            </div>
+            <div class="timeline reveal-up reveal-delay-1">
+                <div class="timeline-steps">
+                    <div>
+                        <p class="timeline-step-label">1995</p>
+                        <p class="timeline-step-title">Our beginning</p>
+                        <p class="timeline-step-copy">InsurCo launches with a focus on personal and small business
+                            coverage.</p>
+                    </div>
+                    <div>
+                        <p class="timeline-step-label">2010</p>
+                        <p class="timeline-step-title">Digital-first shift</p>
+                        <p class="timeline-step-copy">We roll out online policy management and app-based claims
+                            tracking.</p>
+                    </div>
+                    <div>
+                        <p class="timeline-step-label">Today</p>
+                        <p class="timeline-step-title">Global partner</p>
+                        <p class="timeline-step-copy">Serving millions of lives with integrated health, life and
+                            property
+                            programs worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Global presence</p>
+                <h2 class="h2">Local insight, global strength.</h2>
+                <p class="section-description">
+                    Our teams combine on-the-ground expertise with global capital and risk capabilities.
+                </p>
+            </div>
+            <div class="grid-cols-3 plan-grid">
+                <div class="card reveal-up">
+                    <h3 class="h3">North America</h3>
+                    <p class="text-muted" style="margin-top: 8px;">
+                        Enterprise benefits, property and casualty programs for employers and institutions.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill">New York</span>
+                        <span class="pill">Toronto</span>
+                        <span class="pill">Austin</span>
+                    </div>
+                </div>
+                <div class="card reveal-up reveal-delay-1">
+                    <h3 class="h3">Europe &amp; Middle East</h3>
+                    <p class="text-muted" style="margin-top: 8px;">
+                        Cross-border coverage, mobility benefits and specialized risk consulting.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill">London</span>
+                        <span class="pill">Dubai</span>
+                        <span class="pill">Berlin</span>
+                    </div>
+                </div>
+                <div class="card reveal-up reveal-delay-2">
+                    <h3 class="h3">Asia-Pacific</h3>
+                    <p class="text-muted" style="margin-top: 8px;">
+                        High-growth markets powered by digital distribution and partner ecosystems.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill">Singapore</span>
+                        <span class="pill">Sydney</span>
+                        <span class="pill">Mumbai</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Leadership</p>
+                <h2 class="h2">Experienced executives, united by purpose.</h2>
+            </div>
+            <div class="grid-cols-4">
+                <div class="text-center reveal-up">
+                    <img src="assets/images/team/sarah-johnson.jpg" alt="Sarah Johnson" class="leader-avatar">
+                    <h4 style="font-weight: 700;">Sarah Johnson</h4>
+                    <p class="text-primary text-sm">CEO &amp; Founder</p>
+                </div>
+                <div class="text-center reveal-up reveal-delay-1">
+                    <img src="assets/images/team/michael-chen.jpg" alt="Michael Chen" class="leader-avatar">
+                    <h4 style="font-weight: 700;">Michael Chen</h4>
+                    <p class="text-primary text-sm">Chief Financial Officer</p>
+                </div>
+                <div class="text-center reveal-up reveal-delay-2">
+                    <img src="assets/images/team/elena-rodriguez.jpg" alt="Elena Rodriguez" class="leader-avatar">
+                    <h4 style="font-weight: 700;">Elena Rodriguez</h4>
+                    <p class="text-primary text-sm">Head of Claims</p>
+                </div>
+                <div class="text-center reveal-up reveal-delay-3">
+                    <img src="assets/images/team/david-kim.jpg" alt="David Kim" class="leader-avatar">
+                    <h4 style="font-weight: 700;">David Kim</h4>
+                    <p class="text-primary text-sm">Chief Technology Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & CTA -->
+    <section class="section bg-primary home-cta-band">
+        <div class="container">
+            <div class="accent-stripe" style="margin: 0 auto var(--spacing-md);"></div>
+            <h2 class="h2" style="color: white; margin-bottom: 8px;">A culture built on doing the right thing.</h2>
+            <p>
+                We’re always looking for people and partners who care deeply about protecting what matters. Explore
+                opportunities to build the future of insurance with us.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+                <a href="#" class="btn btn-secondary">Explore careers</a>
+                <a href="contact.html" class="btn btn-outline"
+                    style="border-color: rgba(255,255,255,0.7); color: white;">Partner with InsurCo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="brand-logo"
+                        style="color: white; margin-bottom: 16px; display: inline-block;">
+                        <i class="fas fa-shield-halved"></i> Insur<span style="color: var(--secondary-color);">Co</span>
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">
+                        A premium insurance provider dedicated to protecting your future with integrity and
+                        transparency.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Company</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Careers</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Press</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Support</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Center</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">FAQ</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Claims</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Get in Touch</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 12px;">
+                        <i class="fas fa-map-marker-alt" style="width: 20px;"></i> 123 Insurance Blvd, NY 10001
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 12px;">
+                        <i class="fas fa-phone" style="width: 20px;"></i> +1 (555) 123-4567
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
+                        <i class="fas fa-envelope" style="width: 20px;"></i> support@insurco.com
+                    </p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 InsurCo. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

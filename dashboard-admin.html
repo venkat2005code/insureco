@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - InsurCo</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-brand">
+                <i class="fas fa-shield-halved"></i> Insur<span>Co</span>
+            </a>
+            <div style="padding: 0 16px; margin-bottom: 24px;">
+                <span
+                    style="font-size: 10px; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 700;">Admin
+                    Console</span>
+            </div>
+            <button class="sidebar-close" aria-label="Close sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active"><i class="fas fa-tachometer-alt" style="width: 20px;"></i><span>Overview</span></a>
+                <a href="#" class="sidebar-link"><i class="fas fa-users" style="width: 20px;"></i><span>Users</span></a>
+                <a href="#" class="sidebar-link"><i class="fas fa-file-invoice-dollar" style="width: 20px;"></i><span>Policies</span></a>
+                <a href="#" class="sidebar-link"><i class="fas fa-exclamation-triangle" style="width: 20px;"></i><span>Claims</span></a>
+                <a href="#" class="sidebar-link"><i class="fas fa-chart-line" style="width: 20px;"></i><span>Analytics</span></a>
+                <a href="#" class="sidebar-link"><i class="fas fa-cog" style="width: 20px;"></i><span>Settings</span></a>
+                <!-- Language Toggle in Sidebar -->
+                <!-- Theme Toggle -->
+                <button class="sidebar-link theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon" style="width: 20px;"></i><i class="fas fa-sun" style="width: 20px;"></i><span>Theme</span></button>
+                <!-- Language Toggle -->
+                <button class="sidebar-link language-toggle" aria-label="Switch Language"><i class="fas fa-globe" style="width: 20px;"></i><span>Language</span></button>
+                <a href="index.html" class="sidebar-link" style="margin-top: auto;"><i class="fas fa-sign-out-alt" style="width: 20px;"></i><span>Log Out</span></a>
+            </nav>
+        </aside>
+        <div class="sidebar-overlay" aria-hidden="true"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <!-- Sidebar Toggle for Mobile -->
+                    <button class="sidebar-toggle" aria-label="Open sidebar menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <h1 class="h2">Dashboard Overview</h1>
+                        <p class="text-muted">System performance and key metrics.</p>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar" style="background-color: var(--primary-color); color: white;">AD</div>
+                </div>
+            </header>
+
+            <!-- KPI Cards -->
+            <div class="grid grid-cols-4 reveal-up" style="margin-bottom: 32px;">
+                <div class="stat-card">
+                    <div class="stat-icon bg-blue-light"><i class="fas fa-dollar-sign"></i></div>
+                    <div>
+                        <p class="text-muted text-sm">Total Revenue</p>
+                        <h3 class="h3">$4.2M</h3>
+                        <svg class="sparkline chart-stroke-animate">
+                            <path d="M0,25 L20,20 L40,25 L60,10 L80,5" stroke="var(--success)" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-gold-light"><i class="fas fa-users"></i></div>
+                    <div>
+                        <p class="text-muted text-sm">New Customers</p>
+                        <h3 class="h3">1,240</h3>
+                        <svg class="sparkline chart-stroke-animate">
+                            <path d="M0,20 L20,25 L40,15 L60,20 L80,10" stroke="var(--success)" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-red-light"><i class="fas fa-exclamation-circle"></i></div>
+                    <div>
+                        <p class="text-muted text-sm">Pending Claims</p>
+                        <h3 class="h3">45</h3>
+                        <p class="text-xs text-warning"><i class="fas fa-minus"></i> 2 Urgent</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-green-light"><i class="fas fa-file-circle-check"></i></div>
+                    <div>
+                        <p class="text-muted text-sm">Policies Issued</p>
+                        <h3 class="h3">58k</h3>
+                        <p class="text-xs text-success"><i class="fas fa-arrow-up"></i> 8% vs last month</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts & Tables Grid -->
+            <div class="grid grid-cols-3" style="gap: 32px; align-items: start;">
+
+                <!-- Charts Section 1 -->
+                <div class="grid grid-cols-2 col-span-3-lg reveal-up" style="margin-bottom: 32px;">
+                    <!-- 1. Line Chart -->
+                    <div class="card">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">User Growth (Last 6 Months)
+                        </h3>
+                        <div style="height: 200px;">
+                            <svg class="chart-svg" viewBox="0 0 300 100" preserveAspectRatio="none">
+                                <!-- Grid Lines -->
+                                <line x1="0" y1="25" x2="300" y2="25" stroke="currentColor" />
+                                <line x1="0" y1="50" x2="300" y2="50" stroke="currentColor" />
+                                <line x1="0" y1="75" x2="300" y2="75" stroke="currentColor" />
+
+                                <path class="chart-line chart-stroke-animate" d="M0,80 Q50,70 100,50 T200,30 T300,10" />
+                                <circle class="chart-dot chart-animate-fade" cx="0" cy="80" />
+                                <circle class="chart-dot chart-animate-fade" cx="100" cy="50"
+                                    style="animation-delay: 0.2s" />
+                                <circle class="chart-dot chart-animate-fade" cx="200" cy="30"
+                                    style="animation-delay: 0.4s" />
+                                <circle class="chart-dot chart-animate-fade" cx="300" cy="10"
+                                    style="animation-delay: 0.6s" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- 2. Donut Chart -->
+                    <div class="card text-center">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">System Load Distribution</h3>
+                        <div class="chart-donut" style="--c1: var(--error); --p1: 15%; --c2: var(--warning); --p2: 40%;"
+                            data-center="Stable"></div>
+                        <div
+                            style="margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-size: 0.8rem;">
+                            <div><span style="color: var(--error);">● Peak (15%)</span></div>
+                            <div><span style="color: var(--warning);">● High (25%)</span></div>
+                            <div><span style="color: #eee;">● Normal (60%)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section 2 -->
+                <div class="grid grid-cols-2 col-span-3-lg reveal-up" style="margin-bottom: 32px;">
+                    <!-- 3. Vertical Stacked Bar -->
+                    <div class="card">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">Ticket Volume by Type</h3>
+                        <div class="bar-chart-v">
+                            <div class="bar-v"
+                                style="height: 60%; background: #eee; flex-direction: column; justify-content: flex-end; display: flex;">
+                                <div style="height: 30%; background: var(--secondary-color); width: 100%;"></div>
+                                <div style="height: 50%; background: var(--primary-color); width: 100%;"></div>
+                            </div>
+                            <div class="bar-v"
+                                style="height: 80%; background: #eee; flex-direction: column; justify-content: flex-end; display: flex;">
+                                <div style="height: 40%; background: var(--secondary-color); width: 100%;"></div>
+                                <div style="height: 30%; background: var(--primary-color); width: 100%;"></div>
+                            </div>
+                            <div class="bar-v"
+                                style="height: 50%; background: #eee; flex-direction: column; justify-content: flex-end; display: flex;">
+                                <div style="height: 20%; background: var(--secondary-color); width: 100%;"></div>
+                                <div style="height: 60%; background: var(--primary-color); width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-top: 8px;">
+                            <span>Tech</span><span>Billing</span><span>General</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Striped Progress (Revenue Targets) -->
+                    <div class="card">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">Q1 Revenue Targets</h3>
+                        <div style="margin-bottom: 24px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>Vehicle Data</span>
+                                <span class="font-weight-bold">85%</span>
+                            </div>
+                            <div style="background: #eee; height: 16px; border-radius: 8px; overflow: hidden;">
+                                <div class="progress-striped"
+                                    style="width: 85%; height: 100%; background-color: var(--primary-color);"></div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 24px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>Home Data</span>
+                                <span class="font-weight-bold">62%</span>
+                            </div>
+                            <div style="background: #eee; height: 16px; border-radius: 8px; overflow: hidden;">
+                                <div class="progress-striped"
+                                    style="width: 62%; height: 100%; background-color: var(--secondary-color);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section 3 -->
+                <div class="grid grid-cols-2 col-span-3-lg reveal-up" style="margin-bottom: 32px;">
+                    <!-- 5. Bubble Chart -->
+                    <div class="card">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">Traffic Sources</h3>
+                        <div class="bubble-container">
+                            <div class="bubble"
+                                style="width: 80px; height: 80px; left: 10%; top: 20%; background: var(--primary-color);">
+                                Direct</div>
+                            <div class="bubble"
+                                style="width: 60px; height: 60px; left: 50%; top: 50%; background: var(--secondary-color);">
+                                Social</div>
+                            <div class="bubble"
+                                style="width: 40px; height: 40px; left: 70%; top: 10%; background: var(--success);">Ads
+                            </div>
+                            <div class="bubble"
+                                style="width: 30px; height: 30px; left: 30%; top: 70%; background: var(--error);">Email
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Recent Activity (Mini) -->
+                    <div class="card">
+                        <h3 class="h3" style="font-size: 1.125rem; margin-bottom: 24px;">Recent Activity</h3>
+                        <ul style="font-size: 0.85rem;">
+                            <li style="margin-bottom: 12px; display: flex; justify-content: space-between;">
+                                <span><i class="fas fa-user-plus text-success" style="width: 20px;"></i> New User
+                                    #1029</span>
+                                <span class="text-muted">2m</span>
+                            </li>
+                            <li style="margin-bottom: 12px; display: flex; justify-content: space-between;">
+                                <span><i class="fas fa-file-invoice text-primary" style="width: 20px;"></i> Policy
+                                    #8821</span>
+                                <span class="text-muted">15m</span>
+                            </li>
+                            <li style="margin-bottom: 12px; display: flex; justify-content: space-between;">
+                                <span><i class="fas fa-exclamation-triangle text-warning" style="width: 20px;"></i> High
+                                    Load</span>
+                                <span class="text-muted">1h</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span><i class="fas fa-check-circle text-success" style="width: 20px;"></i> Backup
+                                    Done</span>
+                                <span class="text-muted">2h</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Revenue Chart (2/3 width) -->
+                <div class="table-container col-span-2-lg reveal-up" style="padding: 24px;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <h3 class="h3" style="font-size: 1.125rem;">Revenue Analytics (2024)</h3>
+                        <select style="border: 1px solid #ddd; padding: 4px 8px; border-radius: 4px;">
+                            <option>Monthly</option>
+                            <option>Quarterly</option>
+                            <option>Yearly</option>
+                        </select>
+                    </div>
+
+                    <!-- CSS Bar Chart -->
+                    <div class="chart-container">
+                        <div class="bar" style="height: 40%;" data-value="Jan"></div>
+                        <div class="bar" style="height: 55%;" data-value="Feb"></div>
+                        <div class="bar" style="height: 45%;" data-value="Mar"></div>
+                        <div class="bar" style="height: 70%;" data-value="Apr"></div>
+                        <div class="bar" style="height: 60%;" data-value="May"></div>
+                        <div class="bar" style="height: 85%; background-color: var(--secondary-color);"
+                            data-value="Jun"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 12px; font-size: 0.75rem; color: var(--text-light);">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                </div>
+
+                <!-- Recent Alerts (1/3 width) -->
+                <div class="card reveal-up" style="padding: 0;">
+                    <div style="padding: 24px; border-bottom: 1px solid #eee;">
+                        <h3 class="h3" style="font-size: 1.125rem;">System Alerts</h3>
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="margin-bottom: 20px; display: flex; gap: 12px;">
+                            <i class="fas fa-server text-error" style="margin-top: 4px;"></i>
+                            <div>
+                                <p style="font-weight: 500; font-size: 0.9rem;">Server Load High</p>
+                                <p class="text-muted text-sm">Main database server at 90% load.</p>
+                                <p class="text-xs text-muted" style="margin-top: 4px;">10 mins ago</p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 20px; display: flex; gap: 12px;">
+                            <i class="fas fa-user-lock text-warning" style="margin-top: 4px;"></i>
+                            <div>
+                                <p style="font-weight: 500; font-size: 0.9rem;">Suspicious Login</p>
+                                <p class="text-muted text-sm">Multiple failed attempts from IP 192.168.x.x</p>
+                                <p class="text-xs text-muted" style="margin-top: 4px;">1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Claims Table (Full Width of Grid) -->
+                <div class="table-container col-span-3-lg reveal-up">
+                    <div
+                        style="padding: 24px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center;">
+                        <h3 class="h3" style="font-size: 1.125rem;">Recent Claims Overview</h3>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.875rem;">Export
+                                CSV</button>
+                            <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;">View
+                                All</button>
+                        </div>
+                    </div>
+                    <table class="data-table dashboard-user-table">
+                        <thead>
+                            <tr>
+                                <th>Claim ID</th>
+                                <th>Policy Holder</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Date Filed</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CLM-9923</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <div class="avatar" style="width: 24px; height: 24px; font-size: 10px;">SJ</div>
+                                        Sarah Jenkins
+                                    </div>
+                                </td>
+                                <td>Vehicle</td>
+                                <td>$2,450</td>
+                                <td>Oct 24, 2024</td>
+                                <td><span class="status-badge status-pending">In Review</span></td>
+                                <td><button class="btn btn-outline"
+                                        style="padding: 4px 8px; font-size: 0.75rem;">Review</button></td>
+                            </tr>
+                            <tr>
+                                <td>CLM-9922</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <div class="avatar" style="width: 24px; height: 24px; font-size: 10px;">MR</div>
+                                        Mike Ross
+                                    </div>
+                                </td>
+                                <td>Property</td>
+                                <td>$15,000</td>
+                                <td>Oct 23, 2024</td>
+                                <td><span class="status-badge status-active">Approved</span></td>
+                                <td><button class="btn btn-outline"
+                                        style="padding: 4px 8px; font-size: 0.75rem;">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>CLM-9921</td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <div class="avatar" style="width: 24px; height: 24px; font-size: 10px;">AL</div>
+                                        Amy Lee
+                                    </div>
+                                </td>
+                                <td>Health</td>
+                                <td>$450</td>
+                                <td>Oct 22, 2024</td>
+                                <td><span class="status-badge status-rejected">Rejected</span></td>
+                                <td><button class="btn btn-outline"
+                                        style="padding: 4px 8px; font-size: 0.75rem;">Appeal</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- System Logs (New) -->
+                <div class="table-container col-span-2-lg reveal-up" style="margin-top: 32px;">
+                    <div
+                        style="padding: 24px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center;">
+                        <h3 class="h3" style="font-size: 1.125rem;">System Logs</h3>
+                        <a href="#" class="text-secondary text-sm font-weight-bold">View Full Log</a>
+                    </div>
+                    <div style="max-height: 300px; overflow-y: auto;">
+                        <table class="data-table dashboard-user-table" style="font-size: 0.85rem;">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>Level</th>
+                                    <th>Message</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted">Just now</td>
+                                    <td><span class="status-badge status-active">Info</span></td>
+                                    <td>User "John Doe" logged in</td>
+                                    <td>System</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">2 mins ago</td>
+                                    <td><span class="status-badge status-active">Info</span></td>
+                                    <td>New policy created #POL-8821</td>
+                                    <td>Agent_007</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">15 mins ago</td>
+                                    <td><span class="status-badge status-warning">Warning</span></td>
+                                    <td>Failed login attempt (IP: 192.168.1.5)</td>
+                                    <td>System</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">1 hour ago</td>
+                                    <td><span class="status-badge status-rejected">Error</span></td>
+                                    <td>Database connection timeout (Retried)</td>
+                                    <td>Server</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">2 hours ago</td>
+                                    <td><span class="status-badge status-active">Info</span></td>
+                                    <td>Daily backup completed successfully</td>
+                                    <td>BackupSvc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Ticket Resolution Stats (New) -->
+                <div class="card reveal-up" style="margin-top: 32px; padding: 0;">
+                    <div style="padding: 24px; border-bottom: 1px solid #eee;">
+                        <h3 class="h3" style="font-size: 1.125rem;">Support Tickets</h3>
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="margin-bottom: 24px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-weight: 500; font-size: 0.9rem;">Open</span>
+                                <span style="font-weight: 700; color: var(--text-dark);">12</span>
+                            </div>
+                            <div
+                                style="width: 100%; height: 8px; background-color: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 20%; height: 100%; background-color: var(--primary-color);"></div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 24px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-weight: 500; font-size: 0.9rem;">In Progress</span>
+                                <span style="font-weight: 700; color: var(--text-dark);">45</span>
+                            </div>
+                            <div
+                                style="width: 100%; height: 8px; background-color: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 60%; height: 100%; background-color: var(--warning);"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-weight: 500; font-size: 0.9rem;">Resolved (Today)</span>
+                                <span style="font-weight: 700; color: var(--text-dark);">28</span>
+                            </div>
+                            <div
+                                style="width: 100%; height: 8px; background-color: #eee; border-radius: 4px; overflow: hidden;">
+                                <div style="width: 40%; height: 100%; background-color: var(--success);"></div>
+                            </div>
+                        </div>
+                        <div
+                            style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #eee; text-align: center;">
+                            <p class="text-muted text-sm" style="margin-bottom: 12px;">Average Response Time</p>
+                            <h2 class="h2 text-secondary">24m</h2>
+                            <p class="text-success text-xs"><i class="fas fa-arrow-down"></i> 5m vs last week</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsurCo - Your Partner in Protection</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <i class="fas fa-shield-halved"></i> Insur<span>Co</span>
+            </a>
+
+            <div class="nav-links">
+                <!-- Home Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">Home <i class="fas fa-chevron-down"
+                            style="font-size: 12px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home V1</a>
+                        <a href="home-v2.html" class="dropdown-item active">Home V2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <!-- Dashboards Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Dashboards <i class="fas fa-chevron-down"
+                            style="font-size: 12px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="dashboard-user.html" class="dropdown-item">User Dashboard</a>
+                        <a href="dashboard-admin.html" class="dropdown-item">Admin Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="nav-buttons" style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Log In</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 16px;">Get Started</a>
+                </div>
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+
+                <!-- Globe Toggle -->
+                <button class="language-toggle" aria-label="Switch Language">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <!-- Hamburger Menu Toggle (RTL-safe) -->
+                <button class="menu-toggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Mobile Menu Button (Legacy) -->
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div style="padding: 8px 0; border-bottom: 1px solid #eee; margin-bottom: 8px;">
+            <span
+                style="display: block; padding: 8px 0 8px 0; font-weight: 600; color: var(--text-light); font-size: 0.875rem;">Home
+                Layouts</span>
+            <a href="index.html" class="nav-link" style="padding-left: 16px;">Home V1</a>
+            <a href="home-v2.html" class="nav-link active" style="padding-left: 16px;">Home V2</a>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div style="padding: 8px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin: 8px 0;">
+            <span
+                style="display: block; padding: 8px 0; font-weight: 600; color: var(--text-light); font-size: 0.875rem;">Dashboards</span>
+            <a href="dashboard-user.html" class="nav-link" style="padding-left: 16px;">User Dashboard</a>
+            <a href="dashboard-admin.html" class="nav-link" style="padding-left: 16px;">Admin Dashboard</a>
+        </div>
+        <hr style="border: 0; border-top: 1px solid #eee;">
+        <a href="login.html" class="btn btn-outline" style="width: 100%;">Log In</a>
+        <a href="signup.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+    </div>
+
+    <!-- Home V2 – Bold / High-Impact Modern -->
+    <section class="home-hero-v2">
+        <div class="container">
+            <div class="home-hero-v2-grid">
+                <div class="reveal-up">
+                    <p class="section-kicker">New-gen insurance engine</p>
+                    <h1 class="h1">
+                        <span class="headline-gradient">Coverage that moves</span><br>
+                        at the speed of your life.
+                    </h1>
+                    <p class="home-hero-v2-subtitle">
+                        Real-time pricing, instant claims and always-on protection—built for modern teams, athletes and
+                        ambitious businesses that can’t afford downtime.
+                    </p>
+                    <div class="home-hero-actions">
+                        <a href="signup.html" class="btn btn-secondary">Get insured in minutes</a>
+                        <a href="services.html" class="btn btn-outline"
+                            style="border-color: rgba(148,163,184,0.8); color: white;">Compare plans</a>
+                    </div>
+                    <div class="home-hero-v2-meta">
+                        <span class="meta-pill">
+                            <span class="meta-pill-dot"></span>
+                            Live claim updates
+                        </span>
+                        <span class="meta-pill">
+                            <i class="fas fa-star" style="color: var(--warning);"></i>
+                            4.9 / 5 from 10k reviews
+                        </span>
+                    </div>
+                </div>
+                <div class="home-hero-v2-panel reveal-up reveal-delay-1">
+                    <div class="home-hero-v2-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                            <div>
+                                <p class="plan-meta" style="color: rgba(148,163,184,0.9);">Live portfolio view</p>
+                                <p style="font-weight: 600; margin-top: 4px; color: white;">Today’s protection snapshot
+                                </p>
+                            </div>
+                            <div class="accent-stripe"></div>
+                        </div>
+                        <div class="home-hero-v2-gridline">
+                            <div>
+                                <p class="home-hero-v2-stat">3.2M</p>
+                                <p>Active covered lives</p>
+                            </div>
+                            <div>
+                                <p class="home-hero-v2-stat">220ms</p>
+                                <p>Quote response time</p>
+                            </div>
+                            <div>
+                                <p class="home-hero-v2-stat">99%</p>
+                                <p>Digital claim routing</p>
+                            </div>
+                        </div>
+                        <div class="home-hero-v2-tag-row">
+                            <span class="home-hero-v2-tag">Teams &amp; clubs</span>
+                            <span class="home-hero-v2-tag">On-the-go professionals</span>
+                            <span class="home-hero-v2-tag">High-intensity lifestyles</span>
+                        </div>
+                    </div>
+                    <div class="home-hero-v2-card" style="background: rgba(15,23,42,0.88);">
+                        <p class="plan-meta" style="color: rgba(148,163,184,0.9);">Real customer signal</p>
+                        <p style="font-weight: 600; margin-top: 6px; color: white;">“I filed from my phone after a game
+                            injury and had approval before I got home.”</p>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-top: 16px;">
+                            <div class="avatar" style="background-color: rgba(15,23,42,0.9);">KT</div>
+                            <div>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: rgba(248,250,252,0.95);">Kara
+                                    Thompson</p>
+                                <p style="font-size: 0.75rem; color: rgba(148,163,184,0.95);">Semi-professional athlete,
+                                    Injury cover</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Performance stats strip -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-split">
+                <div class="reveal-up">
+                    <p class="section-kicker">Performance you can feel</p>
+                    <h2 class="h2">Designed for teams that never slow down.</h2>
+                    <p class="section-description" style="margin-top: 8px;">
+                        Whether you are running a sales team, a training facility or a distributed workforce, InsurCo
+                        keeps protection live in the background—so you can focus on what wins.
+                    </p>
+                    <div class="home-hero-v2-meta" style="margin-top: var(--spacing-md);">
+                        <span class="badge-soft badge-soft-slate">Sports &amp; wellness</span>
+                        <span class="badge-soft badge-soft-slate">High-growth SaaS</span>
+                        <span class="badge-soft badge-soft-slate">Remote-first teams</span>
+                    </div>
+                </div>
+                <div class="surface-elevated reveal-up reveal-delay-1">
+                    <div class="stat-row">
+                        <div>
+                            <p class="stat-block-label">Same-day payouts</p>
+                            <p class="stat-block-value">72%</p>
+                            <p class="stat-block-helper">Of eligible claims funded in under 24 hours.</p>
+                        </div>
+                        <div>
+                            <p class="stat-block-label">In-app resolution</p>
+                            <p class="stat-block-value">88%</p>
+                            <p class="stat-block-helper">Of queries resolved without a phone call.</p>
+                        </div>
+                        <div>
+                            <p class="stat-block-label">Average savings</p>
+                            <p class="stat-block-value">18%</p>
+                            <p class="stat-block-helper">Typical premium reduction vs. legacy providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: High-impact product tiles -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">High-impact protection</p>
+                <h2 class="h2">Coverage built for speed, movement and momentum.</h2>
+            </div>
+            <div class="grid-cols-3 plan-grid">
+                <!-- Sports & Wellness -->
+                <div class="plan-card-v2 center-aligned reveal-up">
+                    <div class="plan-icon-wrapper icon-blue">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <p class="plan-meta">Teams & clubs</p>
+                    <h3 class="h3">Performance Health Cover</h3>
+                    <p class="text-muted">
+                        Medical and injury cover tailored for athletes, trainers and active communities with rapid approval.
+                    </p>
+                    <ul class="list-check">
+                        <li><i class="fas fa-check"></i><span>Game-day and training session coverage windows.</span></li>
+                        <li><i class="fas fa-check"></i><span>Preferred access to partner clinics and physios.</span></li>
+                    </ul>
+                    <a href="services.html" class="btn-link">View sports coverage <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Modern Workforce (Featured) -->
+                <div class="plan-card-v2 featured center-aligned reveal-up reveal-delay-1">
+                    <span class="featured-badge">Top Rating</span>
+                    <div class="plan-icon-wrapper icon-gold">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <p class="plan-meta" style="color: var(--secondary-color);">Modern workforces</p>
+                    <h3 class="h3">Hybrid Workforce Shield</h3>
+                    <p class="text-muted">
+                        One protection layer for office, home and on-the-road work scenarios in any time zone.
+                    </p>
+                    <ul class="list-check">
+                        <li><i class="fas fa-check"></i><span>Devices, travel and key-person cover in one stack.</span></li>
+                        <li><i class="fas fa-check"></i><span>Realtime risk monitoring by location and activity.</span></li>
+                        <li><i class="fas fa-check"></i><span>Instant claim filing from any mobile device.</span></li>
+                    </ul>
+                    <a href="services.html" class="btn-link">Protect your team <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Executive Plans -->
+                <div class="plan-card-v2 center-aligned reveal-up reveal-delay-2">
+                    <div class="plan-icon-wrapper icon-slate">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <p class="plan-meta">Founders & executives</p>
+                    <h3 class="h3">Executive Momentum Plan</h3>
+                    <p class="text-muted">
+                        Comprehensive health and lifestyle protection for the people you can’t afford to lose.
+                    </p>
+                    <ul class="list-check">
+                        <li><i class="fas fa-check"></i><span>Key-person and succession coverage options.</span></li>
+                        <li><i class="fas fa-check"></i><span>Discreet concierge support, 24/7.</span></li>
+                    </ul>
+                    <a href="services.html" class="btn-link">Explore executive plans <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Frictionless experience timeline -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Frictionless from quote to claim</p>
+                <h2 class="h2">A simple three-step journey, tuned for speed.</h2>
+            </div>
+            <div class="timeline surface-elevated reveal-up reveal-delay-1">
+                <div class="timeline-steps">
+                    <div>
+                        <p class="timeline-step-label">01 — Configure</p>
+                        <p class="timeline-step-title">Build your stack</p>
+                        <p class="timeline-step-copy">Answer a few smart questions and preview coverage in real time.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="timeline-step-label">02 — Activate</p>
+                        <p class="timeline-step-title">Turn on protection</p>
+                        <p class="timeline-step-copy">Sync members, teams and locations from the tools you already use.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="timeline-step-label">03 — Respond</p>
+                        <p class="timeline-step-title">Tap-to-claim</p>
+                        <p class="timeline-step-copy">File, track and approve claims from a single mobile-first
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Momentum stories -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Momentum stories</p>
+                <h2 class="h2">Where performance and protection meet.</h2>
+            </div>
+            <div class="grid-cols-3 testimonial-grid">
+                <div class="card reveal-up">
+                    <div class="quote-mark">“</div>
+                    <p class="text-muted" style="margin-bottom: 20px;">
+                        We run tournaments every weekend. InsurCo’s live coverage windows mean we can scale events
+                        without scaling risk.
+                    </p>
+                    <div class="user-profile">
+                        <div class="avatar" style="background-color: var(--secondary-color);">AR</div>
+                        <div>
+                            <p style="font-weight: 700; font-size: 0.9rem;">Amir Rahman</p>
+                            <p class="text-muted text-xs">Director, National Sports League</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal-up reveal-delay-1">
+                    <div class="quote-mark">“</div>
+                    <p class="text-muted" style="margin-bottom: 20px;">
+                        Our remote teams work across 12 time zones. Claims are filed and resolved while leaders stay
+                        focused on the roadmap.
+                    </p>
+                    <div class="user-profile">
+                        <div class="avatar" style="background-color: var(--text-dark);">JF</div>
+                        <div>
+                            <p style="font-weight: 700; font-size: 0.9rem;">Julia Fischer</p>
+                            <p class="text-muted text-xs">VP People, Global SaaS brand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal-up reveal-delay-2">
+                    <div class="quote-mark">“</div>
+                    <p class="text-muted" style="margin-bottom: 20px;">
+                        What stands out is the clarity. Every coach and captain knows exactly what’s covered before they
+                        walk onto the field.
+                    </p>
+                    <div class="user-profile">
+                        <div class="avatar">DC</div>
+                        <div>
+                            <p style="font-weight: 700; font-size: 0.9rem;">David Cole</p>
+                            <p class="text-muted text-xs">Head Coach, Elite Training Facility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Still comparing providers? -->
+    <section class="section bg-surface">
+        <div class="container">
+            <div class="section-header section-header-center reveal-up">
+                <p class="section-kicker">Still comparing?</p>
+                <h2 class="h2">Why fast-moving teams choose InsurCo.</h2>
+            </div>
+            <div class="grid-cols-3 comparison-grid">
+                <div class="comparison-card reveal-up">
+                    <span class="badge-outline">Legacy carriers</span>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-minus-circle" style="color: var(--warning);"></i><span>Fragmented policies
+                                per product and location.</span></li>
+                        <li><i class="fas fa-minus-circle" style="color: var(--warning);"></i><span>Static pricing and
+                                annual renewal surprises.</span></li>
+                        <li><i class="fas fa-minus-circle" style="color: var(--warning);"></i><span>Paper forms and
+                                phone
+                                calls for every change.</span></li>
+                    </ul>
+                </div>
+                <div class="comparison-card reveal-up reveal-delay-1">
+                    <span class="badge-outline"
+                        style="border-color: var(--secondary-color); color: var(--secondary-color);">InsurCo</span>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-check-circle"></i><span>Unified coverage stack across people, places and
+                                events.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Usage-aware pricing and transparent
+                                forecasts.</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i><span>End-to-end digital workflows from quote to
+                                claim.</span></li>
+                    </ul>
+                </div>
+                <div class="comparison-card reveal-up reveal-delay-2">
+                    <span class="badge-outline">You</span>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-check-circle"></i><span>Choose the coverage profile that matches your risk
+                                appetite.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Dial protection up or down as seasons
+                                change.</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i><span>Give every member a modern, mobile-first
+                                experience.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Action band -->
+    <section class="section bg-primary home-cta-band">
+        <div class="container">
+            <div class="accent-stripe" style="margin: 0 auto var(--spacing-md);"></div>
+            <h2 class="h2" style="color: white; margin-bottom: 8px;">Switch to coverage built for momentum.</h2>
+            <p>
+                Take your team, club or company live on InsurCo and experience insurance that finally feels as modern as
+                the way you work and play.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+                <a href="signup.html" class="btn btn-secondary">Start your switch</a>
+                <a href="contact.html" class="btn btn-outline"
+                    style="border-color: rgba(255,255,255,0.7); color: white;">Talk to a specialist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as V1) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="brand-logo"
+                        style="color: white; margin-bottom: 16px; display: inline-block;">
+                        <i class="fas fa-shield-halved"></i> Insur<span style="color: var(--secondary-color);">Co</span>
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">
+                        A premium insurance provider dedicated to protecting your future with integrity and
+                        transparency.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Company</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Careers</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Press</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Support</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li><a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Center</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">FAQ</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Claims</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7);">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="font-weight: 600; margin-bottom: 20px; color: white;">Get in Touch</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 12px;">
+                        <i class="fas fa-map-marker-alt" style="width: 20px;"></i> 123 Insurance Blvd, NY 10001
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 12px;">
+                        <i class="fas fa-phone" style="width: 20px;"></i> +1 (555) 123-4567
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
+                        <i class="fas fa-envelope" style="width: 20px;"></i> support@insurco.com
+                    </p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 InsurCo. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
