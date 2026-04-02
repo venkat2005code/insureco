@@ -781,12 +781,12 @@ h3 {
 }
 
 .auth-card-header {
-  text-align: start;
+  text-align: center;
   margin-bottom: var(--spacing-xl);
 }
 
 [dir="rtl"] .auth-card-header {
-  text-align: end;
+  text-align: center;
 }
 
 .auth-card-header p {
